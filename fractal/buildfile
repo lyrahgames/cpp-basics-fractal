@@ -1,0 +1,6 @@
+import libs = sfml-graphics%lib{sfml-graphics}
+
+exe{fractal}: {hxx cxx}{**} $libs
+
+cxx.poptions =+ "-I$src_base"
+cxx.coptions += -fopenmp

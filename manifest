@@ -1,0 +1,9 @@
+: 1
+name: fractal
+version: 0.1.0-a.0.z
+summary: fractal render
+license: MIT
+description-file: README.md
+url: https://github.com/lyrahgames/cpp-basics-fractal
+email: markuspawellek@gmail.com
+requires: sfml-graphics ^2.5.1
