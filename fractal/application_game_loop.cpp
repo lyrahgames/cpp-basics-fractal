@@ -76,7 +76,8 @@ void application::execute() {
     // loop iteration. Set it to true trigger the rendering process.
     if (update) {
       compute_viewport();
-      invoke(draw_function, this);
+      // invoke(draw_function, this);
+      (this->*draw_function)();
       texture.update(pixels.data());
       update = false;
     }
